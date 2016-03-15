@@ -7,8 +7,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+
     <title>Imposto Calculado</title>
-    <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
   </head>
   <body>
  
@@ -92,29 +101,44 @@
             }
         
             
-
+$total = $sal - $inss - $ir;
 
 ?>
 
 
  <?php
-      
-      echo "Salario: ";
-      echo $sal;
-      echo "</br>";
-      echo "INSS: ";
-      echo $inss;
-      echo "</br>";
-      echo "IR: ";
-      echo $ir;
-      echo "</br>";
-      echo "Salario - INSS : ";
-      echo $total;
+      echo "<table class= table table-condensed >
+
+
+<tr>
+<td>Descrição</td> <td>Valor</td>
+</tr>
+
+<tr>
+<td>Salario</td> <td>$sal</td>
+</tr>
+
+<tr>
+<td>INSS</td> <td>$inss</td>
+</tr>
+
+<tr>
+<td>Imposto de Renda</td> <td>$ir</td>
+</tr>
+
+<tr>
+<td>Recebimento Liquido</td> <td>$total</td>
+</tr>
+
+</table>";
+
+    
 
  ?>
 
 
 
 
-  </body>
+
+</body>
 </html>
