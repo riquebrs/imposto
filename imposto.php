@@ -103,6 +103,7 @@
             
 $total = $sal - $inss - $ir;
 
+
 ?>
 
 
@@ -115,24 +116,25 @@ $total = $sal - $inss - $ir;
 </tr>
 
 <tr>
-<td>Salario</td> <td>$sal</td>
+<td>Salario</td> <td>R$ "; echo number_format($sal,2,",","."); echo "</td>
 </tr>
 
 <tr>
-<td>INSS</td> <td>$inss</td>
+<td>INSS</td> <td>R$ "; echo number_format($inss,2,",","."); echo "</td>
 </tr>
 
 <tr>
-<td>Imposto de Renda</td> <td>$ir</td>
+<td>Imposto de Renda</td> <td>R$ "; echo number_format($ir,2,",","."); echo "</td>
 </tr>
 
 <tr>
-<td>Recebimento Liquido</td> <td>$total</td>
+<td>Recebimento Liquido</td> <td>R$ "; echo number_format($total,2,",","."); echo "</td>
 </tr>
 
 </table>";
 
     
+
 
  ?>
 
